@@ -3,6 +3,7 @@ package com.example.hoangbao.retrofit;
 
 import com.example.hoangbao.Model.BookRoomModel;
 import com.example.hoangbao.Model.RoomModel;
+import com.example.hoangbao.Model.ShowRoomModel;
 import com.example.hoangbao.Model.UserModel;
 
 import io.reactivex.rxjava3.core.Observable;
@@ -20,6 +21,19 @@ public interface ApiBookingHotel {
     Observable<UserModel> dangNhap(
             @Field("email") String email,
             @Field("password") String pass
+    );
+
+    @POST("show.php")
+    @FormUrlEncoded
+    Observable<ShowRoomModel> showRoom(
+            @Field("maKH") int maKH,
+            @Field("status") int status
+    );
+
+    @POST("delete.php")
+    @FormUrlEncoded
+    Observable<ShowRoomModel> deleteBooking(
+            @Field("id") int id
     );
 
     @POST("order.php")

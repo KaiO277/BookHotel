@@ -5,7 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Activity.CurrentBooking"
     >
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -23,7 +22,7 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/ccardImage"
+                android:id="@+id/rcardImage"
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:layout_gravity="center"
@@ -41,10 +40,23 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/ccardTitle"
+                        android:id="@+id/rcardStatus"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="100"
+                        android:layout_weight="50"
+                        android:padding="10dp"
+                        android:background="@color/blue"
+                        android:text="@string/status"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/rcardTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
                         android:padding="10dp"
                         android:background="@color/blue"
                         android:text="@string/title"
@@ -69,7 +81,7 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/ccardStartDate"
+                        android:id="@+id/rcardStartDate"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="50"
@@ -83,7 +95,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/ccardDays"
+                        android:id="@+id/rcardDays"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="50"
@@ -103,8 +115,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:orientation="vertical"
-                android:layout_height="wrap_content"
-                >
+                android:layout_height="wrap_content">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:orientation="horizontal"
@@ -113,7 +124,7 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/ccardPrice"
+                        android:id="@+id/rcardPrice"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="50"
@@ -127,10 +138,11 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/ccardTotalPrice"
+                        android:id="@+id/rcardTotalPrice"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="50"
+                        android:lines="1"
                         android:padding="10dp"
                         android:background="@color/blue"
                         android:text="@string/total_payment"
@@ -143,6 +155,35 @@
                 </LinearLayout>
 
             </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rcardDelete"
+                        android:drawableEnd="@drawable/delete"
+                        android:drawableTint="@color/white"
+                        android:backgroundTint="@color/red"
+                        android:padding="5dp"
+                        android:layout_margin="15dp"
+                        android:text="Delete"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </LinearLayout>
+
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

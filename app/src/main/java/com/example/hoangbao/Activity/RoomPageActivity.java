@@ -72,12 +72,6 @@ public class RoomPageActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Enter Start Date", Toast.LENGTH_SHORT).show();
             }
         });
-//        vNights.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//            }
-//        });
         pBook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

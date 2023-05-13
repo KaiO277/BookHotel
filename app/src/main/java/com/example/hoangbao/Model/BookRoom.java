@@ -2,7 +2,15 @@ package com.example.hoangbao.Model;
 
 public class BookRoom {
     int id, maKH;
-    String startDate, night, sophong;
+    String startDate, night, sophong, status;
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
     public int getId() {
         return id;
