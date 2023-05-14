@@ -23,6 +23,14 @@ public interface ApiBookingHotel {
             @Field("password") String pass
     );
 
+    @POST("dangki.php")
+    @FormUrlEncoded
+    Observable<UserModel> dangKi(
+            @Field("name") String name,
+            @Field("email") String email,
+            @Field("password") String pass
+    );
+
     @POST("show.php")
     @FormUrlEncoded
     Observable<ShowRoomModel> showRoom(

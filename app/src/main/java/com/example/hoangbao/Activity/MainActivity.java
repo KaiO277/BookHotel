@@ -8,10 +8,13 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.hoangbao.Auth.LoginPage;
+import com.example.hoangbao.Auth.RegisterPage;
 import com.example.hoangbao.R;
+import com.google.android.material.textview.MaterialTextView;
 
 public class MainActivity extends AppCompatActivity {
     Button btnLogin;
+    MaterialTextView btnCreate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +26,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), LoginPage.class);
                 startActivity(intent);
+            }
+        });
+        btnCreate = findViewById(R.id.register);
+        btnCreate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), RegisterPage.class);
+                startActivity(intent);
+                finish();
             }
         });
     }
