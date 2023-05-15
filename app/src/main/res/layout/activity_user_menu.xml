@@ -69,7 +69,7 @@
         android:layout_height="400dp"
         android:layout_marginBottom="60dp"
         android:alignmentMode="alignMargins"
-        android:columnCount="2"
+        android:columnCount="1"
         android:columnOrderPreserved="false"
         android:padding="14dp"
         android:rowCount="3"
@@ -120,48 +120,48 @@
 
         </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp"
-            android:backgroundTint="#E3E2E7"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="6dp">
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_rowWeight="1"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            android:backgroundTint="#E3E2E7"-->
+<!--            app:cardCornerRadius="8dp"-->
+<!--            app:cardElevation="6dp">-->
 
-            <LinearLayout
-                android:onClick="current_bookingButton"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:layout_margin="16dp"
-                android:background="@color/blue"
-                android:gravity="center"
-                android:orientation="vertical">
+<!--            <LinearLayout-->
+<!--                android:onClick="current_bookingButton"-->
+<!--                android:layout_width="130dp"-->
+<!--                android:layout_height="130dp"-->
+<!--                android:layout_gravity="center_horizontal|center_vertical"-->
+<!--                android:layout_margin="16dp"-->
+<!--                android:background="@color/blue"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical">-->
 
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center_horizontal"
-                    android:background="@drawable/room"
-                    android:backgroundTint="@color/white"/>
+<!--                <ImageView-->
+<!--                    android:layout_width="60dp"-->
+<!--                    android:layout_height="60dp"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:background="@drawable/room"-->
+<!--                    android:backgroundTint="@color/white"/>-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="@string/current_booking"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:layout_gravity="center_horizontal"
-                    android:textSize="14sp"
-                    android:textStyle="normal" />
-            </LinearLayout>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:text="@string/current_booking"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textStyle="normal" />-->
+<!--            </LinearLayout>-->
 
-        </androidx.cardview.widget.CardView>
+<!--        </androidx.cardview.widget.CardView>-->
 
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
@@ -205,47 +205,47 @@
 
         </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp"
-            android:backgroundTint="#E3E2E7"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="6dp">
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_rowWeight="1"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            android:backgroundTint="#E3E2E7"-->
+<!--            app:cardCornerRadius="8dp"-->
+<!--            app:cardElevation="6dp">-->
 
-            <LinearLayout
-                android:onClick="room_serviceButton"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:layout_margin="16dp"
-                android:gravity="center"
-                android:background="@color/blue"
-                android:orientation="vertical">
+<!--            <LinearLayout-->
+<!--                android:onClick="room_serviceButton"-->
+<!--                android:layout_width="130dp"-->
+<!--                android:layout_height="130dp"-->
+<!--                android:layout_gravity="center_horizontal|center_vertical"-->
+<!--                android:layout_margin="16dp"-->
+<!--                android:gravity="center"-->
+<!--                android:background="@color/blue"-->
+<!--                android:orientation="vertical">-->
 
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center_horizontal"
-                    android:background="@drawable/service"
-                    android:backgroundTint="@color/white"/>
+<!--                <ImageView-->
+<!--                    android:layout_width="60dp"-->
+<!--                    android:layout_height="60dp"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:background="@drawable/service"-->
+<!--                    android:backgroundTint="@color/white"/>-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="@string/room_service"
-                    android:textSize="14sp"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textStyle="normal" />
-            </LinearLayout>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:text="@string/room_service"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textStyle="normal" />-->
+<!--            </LinearLayout>-->
 
-        </androidx.cardview.widget.CardView>
+<!--        </androidx.cardview.widget.CardView>-->
 
 
 
